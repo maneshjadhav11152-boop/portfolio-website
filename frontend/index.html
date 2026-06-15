@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manesh Jadhav | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">Portfolio</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <img src="assets/images/venom.jpg"
+         alt="Manesh Jadhav"
+         class="profile-img">
+    <h1>Hi, I'm Manesh Jadhav</h1>
+    <p>Full Stack Developer</p>
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="https://github.com/maneshjadhav11152-boop"
+       class="btn"
+       target="_blank">
+   GitHub
+</a>
+    <a href="assets/resume/Manesh Resume.pdf"
+       class="btn" download>Download Resume
+</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Full Stack Developer passionate about building modern,
+        responsive web applications using HTML, CSS, JavaScript,
+        Node.js, Express.js and MongoDB.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+        <div>Node.js</div>
+        <div>Express.js</div>
+        <div>MongoDB</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Responsive Full Stack Portfolio.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Recipe Sharing Platform</h3>
+        <p>Search-focused recipe application with MongoDB.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="text" id="subject" placeholder="Subject" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p id="responseMessage"></p>
+</section>
+
+<footer>
+    <p>© 2026 Manesh Jadhav. All Rights Reserved.</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
