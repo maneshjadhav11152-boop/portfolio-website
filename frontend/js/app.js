@@ -30,3 +30,15 @@ form.addEventListener("submit", async (e) => {
             "Error sending message";
     }
 });
+
+const darkModeBtn = document.getElementById("darkModeBtn");
+
+darkModeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+        darkModeBtn.innerText = "☀️ Light Mode";
+    } else {
+        darkModeBtn.innerText = "🌙 Dark Mode";
+    }
+});
