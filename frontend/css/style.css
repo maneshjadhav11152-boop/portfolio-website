@@ -123,3 +123,46 @@ footer{
     border-radius:5px;
     margin:5px;
 }
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        display: block;
+        margin: 10px auto;
+        width: fit-content;
+    }
+
+    .project-card {
+        width: 95%;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+}
