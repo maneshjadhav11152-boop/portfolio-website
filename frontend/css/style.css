@@ -1,3 +1,7 @@
+html{
+    scroll-behavior:smooth;
+}
+
 *{
     margin:0;
     padding:0;
@@ -7,12 +11,16 @@
 
 body{
     line-height:1.6;
+    transition: 0.4s;
 }
 
 header{
     background:#111;
     color:white;
     padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 nav{
@@ -33,12 +41,13 @@ nav a{
 }
 
 .hero{
-    height:100vh;
+    min-height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background:#f4f4f4;
+    background:linear-gradient(135deg,#007bff,#00c6ff);
+    color:white;
 }
 
 .btn{
@@ -70,8 +79,12 @@ section{
 .project-card{
     border:1px solid #ddd;
     padding:20px;
-    margin:20px auto;
-    max-width:500px;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:scale(1.03);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
 }
 
 form{
@@ -196,5 +209,14 @@ footer{
 
 .dark-mode footer{
     background:#000;
+}
+
+.btn{
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 

@@ -42,3 +42,14 @@ darkModeBtn.addEventListener("click", () => {
         darkModeBtn.innerText = "🌙 Dark Mode";
     }
 });
+
+new Typed("#typing",{
+    strings:[
+        "Full Stack Developer",
+        "MERN Stack Developer",
+        "Frontend Developer"
+    ],
+    typeSpeed:60,
+    backSpeed:40,
+    loop:true
+});
