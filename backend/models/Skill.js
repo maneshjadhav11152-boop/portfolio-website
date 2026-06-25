@@ -1,9 +1,15 @@
 const mongoose = require("mongoose");
 
 const skillSchema = new mongoose.Schema({
-  name: String,
+  name: { 
+    type: String,
+    required: true
+  },
 
-  percentage: Number
+  icon: {
+    type: String,
+    required: true
+  }
 });
 
 module.exports = mongoose.model("Skill", skillSchema);

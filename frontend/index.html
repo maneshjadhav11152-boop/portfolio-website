@@ -1,153 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manesh Jadhav | Portfolio</title>
+    
+    <title>PORTFOLIO</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet"
-href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
 </head>
 <body>
-
-<header>
-    <nav>
-        <h2 class="logo">Portfolio</h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button id="darkModeBtn">🌙 Dark Mode</button>
+ <header>
+    <div class="logo">
+         <img src="assets/images/mjlogo.png" alt="logo of MJ"> 
+    </div>
+    
+    <nav class="nav_bar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
     </nav>
-</header>
+ </header>
 
-<section id="home" class="hero">
-    <img src="assets/images/venom.jpg"
-         alt="Manesh Jadhav"
-         class="profile-img">
-    <h1>Hi, I'm Manesh Jadhav</h1>
-    <p id="typed"></p>
-    <a href="#projects" class="btn">View Projects</a>
-    <a href="https://github.com/maneshjadhav11152-boop"
-       class="btn"
-       target="_blank">
-   GitHub
-</a>
-<a href="https://www.linkedin.com/in/manesh-jadhav-a34880408"
-   class="btn"
-   target="_blank">
-LinkedIn
-</a>
-    <a href="assets/resume/Manesh Resume.pdf"
-       class="btn" download>Download Resume
-</a>
-</section>
+ <main>
+    <!--home section-->
+ <section id="home" class="home">
+    <div class="home-content">
+        <h1> <span>  Hi I,m Manesh Jadhav  </span></h2>
+        <h2>Frontend <span style="color:#00ffff;">Developer</span></h2>
+        <P>Passionate web developer creating responsive and
+           user-friendly websites using HTML, CSS, and JavaScript.
+           I am constantly learning new technologies and improving my skills and build better web experiences.</P>
 
-<section id="about" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>
-        I am a Full Stack Developer passionate about building modern,
-        responsive web applications using HTML, CSS, JavaScript,
-        Node.js, Express.js and MongoDB.
-    </p>
-</section>
-
-<section id="skills" data-aos="zoom-in">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-        <div>
-  <img src="assets/icons/html.png" width="50">
-  <p>HTML</p>
-</div>
-        <div>
-  <img src="assets/icons/css.png" width="50">
-  <p>CSS</p>
-</div>
-        <div>
-  <img src="assets/icons/javascript.png" width="50">
-  <p>JavaScript</p>
-</div>
-        <div>
-  <img src="assets/icons/nodejs.png" width="50">
-  <p>Node.js</p>
-</div>
-        <div>
-  <img src="assets/icons/expressjs.png" width="50">
-  <p>Express.js</p>
-</div>
-        <div>
-  <img src="assets/icons/mongodb.png" width="50">
-  <p>MongoDB</p>
-</div>
+        <div class="button">
+            <a href="assets/resume/Manesh Resume.pdf" class="btn">Download Resume</a>
+        </div>   
+         
     </div>
-</section>
+    <div class="home-image">
+        <img src="assets/images/home page image.jpeg" alt="profile photo">
+    </div>
+ </section>
 
-<section id="projects" data-aos="fade-right">
+    <!--about section-->
+ <section id="about" class="about">
+    <div class="intro-about"> About Me <br><hr>
+    <p>I am a B.Sc. Computer Science graduate with a strong
+       interest in Frontend Development and Web Technologies.I enjoy building modern, responsive websites and continuously learning new technologies.</p>    
+    </div>
+ </section>
+
+    <!--skills section-->
+ <section id="skills" class="skills">
+    <h2 class="skills_heading"><span>Skills</span></h2>
+    <div class="skills_container">
+         <div class="skills_box">
+            <i class="fa-brands fa-html5">  </i>
+            <h3>HTML</h3>
+        </div> 
+        
+
+        <div class="skills_box">
+            <i class="fa-brands fa-css3-alt">  </i>
+            <h3>CSS</h3>
+        </div>
+        <div class="skills_box"><i class="fa-brands fa-square-js">  </i>
+            <h3>JavaScript</h3>
+        </div>
+        <div class="skills_box"><i class="fa-brands fa-node-js">  </i>
+            <h3>Node.JS</h3>
+        </div>
+        <div class="skills_box"><i class="fa-brands fa-react"> </i>
+            <h3>React</h3>
+        </div>
+        
+        
+        
+    </div>
+ </section>
+
+    <!--project section-->
+ <section id="project" class="project">
     <h2>Projects</h2>
-
-    <div class="project-card">
-        <img src="assets/images/project1.png"width="20%">
-    <h3>AI-Powered Finance App</h3>
-
-    <p>
-        Full Stack Portfolio Website built using
-        HTML, CSS, JavaScript, Node.js,
-        Express.js and MongoDB.
-    </p>
-
-    <a href="https://github.com/maneshjadhav11152-boop/portfolio-website"
-       target="_blank"
-       class="btn">
-       View Source Code
-    </a>
-</div>
-    <div class="project-card">
-        <h3>Recipe Sharing Platform</h3>
-        <p>Search-focused recipe application with MongoDB.</p>
+    <div class="project_container">
+        <h3>Projects Coming Soon 🚀</h3>
+        <p>
+            I am currently learning Frontend Development and actively building real-world projects.
+            This section will be updated with my latest work soon.
+        </p>
     </div>
-</section>
+ </section>
 
-<section id="certifications" data-aos="fade-left">
-    <h2>Certifications</h2>
-
-    <div class="project-card">
-        <h3>Full Stack Development</h3>
-        <p>HTML, CSS, JavaScript, Node.js, Express.js and MongoDB</p>
-    </div>
-
-    <div class="project-card">
-        <h3>Web Development</h3>
-        <p>Responsive Website Design and Frontend Development</p>
-    </div>
-</section>
-
-<section id="certifications">
-    <h2>Certifications</h2>
-
-    <div class="project-card">
-        <h3>Full Stack Web Development</h3>
-        <p>Completed training in HTML, CSS, JavaScript, Node.js, Express.js and MongoDB.</p>
-    </div>
-
-    <div class="project-card">
-        <h3>MongoDB Basics</h3>
-        <p>Database design, CRUD operations and Atlas deployment.</p>
-    </div>
-
-    <div class="project-card">
-        <h3>JavaScript Programming</h3>
-        <p>Modern JavaScript concepts and web development practices.</p>
-    </div>
-</section>
-
-<section id="contact" data-aos="flip-up">
+    <!--contact section-->
+ <section id="contact" data-aos="flip-up">
     <h2>Contact Me</h2>
 
     <form id="contactForm">
@@ -161,30 +107,22 @@ LinkedIn
     <p id="responseMessage"></p>
 </section>
 
+ </main>
+
 <footer>
     <section class="social-links">
 
 <a href="https://github.com/maneshjadhav11152-boop/portfolio-website" target="_blank">
-GitHub
+<i class="fab fa-github"></i>
 </a>
 
 <a href="https://www.linkedin.com/in/manesh-jadhav-a34880408" target="_blank">
-LinkedIn
+<i class="fab fa-linkedin"></i>
 </a>
 
 </section>
     <p>© 2026 Manesh Jadhav. All Rights Reserved.</p>
 </footer>
-
 <script src="js/app.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script>
-AOS.init({
-    duration: 1000,
-    once: true
-});
-</script>
-
 </body>
 </html>

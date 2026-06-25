@@ -1,3 +1,5 @@
+
+
 const form = document.getElementById("contactForm");
 
 form.addEventListener("submit", async (e) => {
@@ -31,25 +33,49 @@ form.addEventListener("submit", async (e) => {
     }
 });
 
-const darkModeBtn = document.getElementById("darkModeBtn");
+// const darkModeBtn = document.getElementById("darkModeBtn");
 
-darkModeBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+// darkModeBtn.addEventListener("click", () => {
+//     document.body.classList.toggle("dark-mode");
 
-    if(document.body.classList.contains("dark-mode")){
-        darkModeBtn.innerText = "☀️ Light Mode";
-    } else {
-        darkModeBtn.innerText = "🌙 Dark Mode";
+//     if(document.body.classList.contains("dark-mode")){
+//         darkModeBtn.innerText = "☀️ Light Mode";
+//     } else {
+//         darkModeBtn.innerText = "🌙 Dark Mode";
+//     }
+// });
+
+// new Typed("#typing",{
+//     strings:[
+//         "Full Stack Developer",
+//         "MERN Stack Developer",
+//         "Frontend Developer"
+//     ],
+//     typeSpeed:60,
+//     backSpeed:40,
+//     loop:true
+// });
+
+async function loadSkills() {
+    try {
+        const res = await fetch("http://localhost:5000/api/skills");
+        const skills = await res.json();
+
+        const container = document.getElementById("skillsContainer");
+        container.innerHTML = "";
+
+        skills.forEach(skill => {
+            container.innerHTML += `
+                <div class="skills_box">
+                    <i class="fa-brands ${skill.icon}"></i>
+                    <h3>${skill.name}</h3>
+                </div>
+            `;
+        });
+
+    } catch (err) {
+        console.log(err);
     }
-});
+}
 
-new Typed("#typing",{
-    strings:[
-        "Full Stack Developer",
-        "MERN Stack Developer",
-        "Frontend Developer"
-    ],
-    typeSpeed:60,
-    backSpeed:40,
-    loop:true
-});
+loadSkills();

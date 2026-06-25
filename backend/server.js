@@ -21,6 +21,8 @@ app.use("/api/profile", require("./routes/profileRoutes"));
 
 app.use("/api/contact", require("./routes/contactRoutes"));
 
+app.use("/api/skills", require("./routes/skillRoutes"));
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
