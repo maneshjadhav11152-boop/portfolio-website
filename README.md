@@ -4,4 +4,4 @@ This repository contains the tasks completed during my internship at CODEC TECHN
 
 ## Task 1: Responsive Portfolio Website
 
-- *Live Link:* [Click here to view my Portfolio](https://manesh-jadhav-portfolio.netlify.app)
+- *Live Link:* [Click here to view my Portfolio](https://manesh-jadhav-portfolio.netlify.app/)
