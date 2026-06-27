@@ -1,6 +1,6 @@
-# CODEC TECHNOLOGIE Internship - Full Stack Development
+# CODEC TECHNOLOGIES Internship - Full Stack Development
 
-This repository contains the tasks completed during my internship at CodSoft.
+This repository contains the tasks completed during my internship at CODEC TECHNOLOGIES.
 
 ## Task 1: Responsive Portfolio Website
 
