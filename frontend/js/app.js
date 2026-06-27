@@ -13,7 +13,7 @@ form.addEventListener("submit", async (e) => {
     };
 
     try {
-        const response = await fetch("http://localhost:5000/api/contact", {
+        const response = await fetch("https://site--portfolio-website--xnzf66tqzwls.code.run/api/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -58,7 +58,7 @@ form.addEventListener("submit", async (e) => {
 
 async function loadSkills() {
     try {
-        const res = await fetch("http://localhost:5000/api/skills");
+        const res = await fetch("https://site--portfolio-website--xnzf66tqzwls.code.run/api/skills");
         const skills = await res.json();
 
         const container = document.getElementById("skillsContainer");
