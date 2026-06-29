@@ -1,7 +1,46 @@
-# CODEC TECHNOLOGIES Internship - Full Stack Development
+# 🌐 Personal Portfolio Website
 
-This repository contains the tasks completed during my internship at CODEC TECHNOLOGIES.
+A modern, responsive Full Stack Portfolio Website built during my Full Stack Development Internship.
 
-## Task 1: Responsive Portfolio Website
+## 🚀 Live Demo
 
-- *Live Link:* [Click here to view my Portfolio](https://manesh-jadhav-portfolio.netlify.app/)
+🌍 **Portfolio Website:** https://manesh-jadhav-portfolio.netlify.app/
+
+## ✨ Features
+
+- 👨‍💻 Professional Home Page
+- 🙋 About Me Section
+- 🛠️ Skills Section
+- 💼 Projects Showcase
+- 📧 Contact Form
+- 📱 Fully Responsive Design
+- 🌙 Modern UI
+- ⚡ Fast Loading
+- 🔒 Secure Backend APIs
+
+## 🛠️ Tech Stack
+
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB Atlas
+
+- ## 👨‍💻 Author
+
+**Manesh Jadhav**
+
+📧 Email: maneshjadhav11152@gmail.com
+
+🐙 GitHub:
+https://github.com/maneshjadhav11152-boop
+
+## ⭐ Support
+
+If you like this project, please give it a ⭐ on GitHub.
