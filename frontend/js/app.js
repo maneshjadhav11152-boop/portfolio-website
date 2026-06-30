@@ -33,28 +33,7 @@ form.addEventListener("submit", async (e) => {
     }
 });
 
-// const darkModeBtn = document.getElementById("darkModeBtn");
 
-// darkModeBtn.addEventListener("click", () => {
-//     document.body.classList.toggle("dark-mode");
-
-//     if(document.body.classList.contains("dark-mode")){
-//         darkModeBtn.innerText = "☀️ Light Mode";
-//     } else {
-//         darkModeBtn.innerText = "🌙 Dark Mode";
-//     }
-// });
-
-// new Typed("#typing",{
-//     strings:[
-//         "Full Stack Developer",
-//         "MERN Stack Developer",
-//         "Frontend Developer"
-//     ],
-//     typeSpeed:60,
-//     backSpeed:40,
-//     loop:true
-// });
 
 async function loadSkills() {
     try {
