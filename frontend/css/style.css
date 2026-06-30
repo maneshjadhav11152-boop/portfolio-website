@@ -87,7 +87,7 @@ header{
 }
 
 section{
-  padding-top: 50px;
+  min-height: auto;
 }
 
 body{
@@ -103,6 +103,7 @@ body{
     justify-content:space-between;
     align-items:center;
     gap:50px;
+    padding-top: 50px;
 }
 
 .home-content{
@@ -251,9 +252,14 @@ body{
 
 .about-info div{
     background:#112e42;
-    padding:12px 18px;
+    padding:15px 20px;
     border-radius:10px;
     border:1px solid #00eeff;
+    min-width: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 /* Responsive */
@@ -285,8 +291,8 @@ body{
 
 .skills{
     width:100%;
-    min-height:100vh;
-    padding:90px 8%;
+    min-height:auto;
+    padding:60px 8%;
     background:#081b29;
 }
 
@@ -422,7 +428,7 @@ body{
 /* PROJECT SECTION */
 
 .project{
-    padding:90px 10%;
+    padding:60px 10%;
     background:#0d1117;
 }
 
@@ -517,13 +523,12 @@ body{
 
 #contact{
     width: 100%;
-    min-height: 100vh;
-    padding: 100px 10%;
+    min-height: auto;
+    padding: 60px 10%;
     background: #08111f;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 #contact h2{
@@ -605,7 +610,7 @@ body{
 
 .footer{
     background:#0b0f19;
-    padding:70px 10% 30px;
+    padding:50px 10% 30px;
     text-align:center;
     border-top:1px solid rgba(0,255,255,.2);
 }
@@ -678,4 +683,21 @@ body{
 .copyright{
     color:#9ca3af;
     font-size:15px;
+}
+
+@media (max-width:768px){
+
+    .skills,
+    .project,
+    #contact{
+        padding:50px 20px;
+        min-height:auto;
+    }
+
+    .project h2,
+    .section-title,
+    #contact h2{
+        margin-bottom:35px;
+    }
+
 }
